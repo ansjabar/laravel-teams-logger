@@ -1,0 +1,33 @@
+{
+	"name": "ansjabar/laravel-teams-logger",
+	"description": "Send messages to Microsoft Teams using Incoming Webhook",
+    "keywords": ["laravel", "teams-logger"],
+	"license": "MIT",
+	"authors": [
+        {
+            "name": "Ans Jabar",
+            "email": "ans.jabar@gmail.com"
+        }
+	],
+    "support": {
+        "issues": "https://github.com/ansjabar/laravel-teams-logger/issues",
+        "source": "https://github.com/ansjabar/laravel-teams-logger"
+    },
+	"require": {
+		"php": "^7.0|^8.0",
+		"monolog/monolog": "^1.23|^2.0"
+	},
+	"require-dev": {
+		"ext-curl": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"AnsJabar\\LaravelTeamsLogger\\": "src/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [ "AnsJabar\\LaravelTeamsLogger\\LoggerServiceProvider" ]
+		}
+	}
+}
